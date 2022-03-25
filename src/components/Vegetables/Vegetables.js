@@ -24,6 +24,10 @@ const Vegetables = () => {
     }
   };
 
+  const emptyItem = () => {
+    setCarts([]);
+  };
+
   return (
     <div className="store-container">
       <div className="vegetables-container">
@@ -40,7 +44,7 @@ const Vegetables = () => {
         {carts.map((cart) => (
           <Cart cart={cart}></Cart>
         ))}
-        <Selected></Selected>
+        <Selected emptyItem={emptyItem}></Selected>
       </div>
     </div>
   );
