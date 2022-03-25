@@ -1,0 +1,11 @@
+
+.vegetable-size{
+    border: 5px solid green;
+    border-radius: 20px;
+    margin: 20px;
+    padding: 10px
+}
+.vegetable-size img{
+    width: 200px;
+    height: 200px;
+}

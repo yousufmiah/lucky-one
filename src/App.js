@@ -1,10 +1,14 @@
-import logo from "./logo.svg";
+import "./App.css";
+import Vegetables from "./components/Vegetables/Vegetables";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h2 className="text-success">Vegetables</h2>
+      <h1 className=" main text-center text-white bg-primary py-3">
+        Vegetables Shop
+      </h1>
+      <Vegetables></Vegetables>
     </div>
   );
 }

@@ -1,0 +1,74 @@
+[
+    {
+      "id": "vegetable1",
+      "name": "Tomato",
+      "price": 100,
+      "img": "https://media.istockphoto.com/photos/tomatoes-isolate-on-white-background-tomato-half-isolated-tomatoes-picture-id1258142863?b=1&k=20&m=1258142863&s=170667a&w=0&h=iFVeHatKRUPjoAd2YR1Lgjv_74tZ-gTBbT3cOqFy0BI="
+    },
+    {
+      "id": "vegetable2",
+      "name": "Cabbage",
+      "price": 70,
+      "img": "https://static9.depositphotos.com/1628352/1107/i/600/depositphotos_11071200-stock-photo-cabbage.jpg"
+    },
+    {
+      "id": "vegetable3",
+      "name": "Cauliflower",
+      "price": 80,
+      "img": "https://ichef.bbci.co.uk/news/976/cpsprodpb/76A1/production/_108296303_cauliflowergetty.jpg"
+    },
+    {
+      "id": "vegetable4",
+      "name": "Radish",
+      "price": 50,
+      "img": "https://m.media-amazon.com/images/I/51Kgmm1TeZL.jpg"
+    },
+    {
+      "id": "vegetable5",
+      "name": "Carrot",
+      "price": 120,
+      "img": "https://media.istockphoto.com/photos/fresh-carrots-isolated-on-white-background-picture-id545454816?k=20&m=545454816&s=612x612&w=0&h=zTbL2GTPiWKU7kNyC1mqsQfbBvQIQNKtRgm_uLzUKkk="
+    },
+    {
+      "id": "vegetable6",
+      "name": "Pumkin",
+      "price": 70,
+      "img": "https://www.earthytales.in/uploads/products/pro-37-0.JPG"
+    },
+    {
+      "id": "vegetable7",
+      "name": "Brinjal",
+      "price": 90,
+      "img": "https://sahajaaharam.com/files/313.png"
+    },
+    {
+        "id": "vegetable8",
+        "name": "Potato",
+        "price": 20,
+        "img": "https://media.istockphoto.com/photos/three-potatoes-picture-id157430678?k=20&m=157430678&s=612x612&w=0&h=dfYLuPYwA50ojI90hZ4jCgKZd5TGnqf24UCVBszoZIA="
+      },
+      {
+        "id": "vegetable9",
+        "name": "Cucumber",
+        "price": 80,
+        "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FRi9tJ1ayqzyq1w0bqSjCjGdGfexB6sqWw&usqp=CAU"
+      },
+      {
+        "id": "vegetable10",
+        "name": "Chicinga",
+        "price": 40,
+        "img": "https://kgclick.com/public/images/products/1711661997476494.jpg"
+      },
+      {
+        "id": "vegetable11",
+        "name": "Derosh",
+        "price": 100,
+        "img": "https://images-eu.ssl-images-amazon.com/images/I/51b+Lyco4BL._AC_UL600_SR600,600_.jpg"
+      },
+      {
+        "id": "vegetable12",
+        "name": "Capsicum",
+        "price": 300,
+        "img": "https://image.shutterstock.com/image-photo/paprika-cultivar-species-capsicum-annuum-260nw-309909956.jpg"
+      }
+  ]
