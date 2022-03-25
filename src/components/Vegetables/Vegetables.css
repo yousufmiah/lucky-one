@@ -1,10 +1,8 @@
-/* .vegetables{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-} */
+
 .store-container{
     display: grid;
     grid-template-columns: 4fr 1fr;  
+    
 }
 
 .vegetables-container{
@@ -15,8 +13,10 @@
 }
 
 .cart-container{
-    background-color: rgba(98, 120, 216, 0.3);
-   
+    background-color: rgba(16, 57, 241, 0.3);
+    position:sticky;
+    top:100px;
+        
 }
 
 @media screen and (max-width:1100px) {

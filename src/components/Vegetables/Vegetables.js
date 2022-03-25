@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import Selected from "../Selected/Selected";
+import SelectItem from "../SelectItem/SelectItem";
 import Vegetable from "../Vegetable/Vegetable";
 import "./Vegetables.css";
 
 const Vegetables = () => {
   const [vegetables, setVegetables] = useState([]);
-  const [cart, setCart] = useState([]);
-  // console.log(cart);
+  const [carts, setCarts] = useState([]);
 
   useEffect(() => {
     fetch("vegetablesData.json")
@@ -15,7 +16,12 @@ const Vegetables = () => {
   }, []);
 
   const addToCartHandler = (vegetable) => {
-    setCart(vegetable);
+    if (carts.length < 4) {
+      const newVegetable = [...carts, vegetable];
+      setCarts(newVegetable);
+    } else {
+      alert("Sorry, not allow above 4 items.");
+    }
   };
 
   return (
@@ -30,7 +36,11 @@ const Vegetables = () => {
         ))}
       </div>
       <div className="cart-container">
-        <Cart cart={cart}></Cart>
+        <SelectItem></SelectItem>
+        {carts.map((cart) => (
+          <Cart cart={cart}></Cart>
+        ))}
+        <Selected></Selected>
       </div>
     </div>
   );

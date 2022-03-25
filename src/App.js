@@ -1,6 +1,7 @@
 import "./App.css";
 import Vegetables from "./components/Vegetables/Vegetables";
 import "./App.css";
+import Cart from "./components/Cart/Cart";
 
 function App() {
   return (

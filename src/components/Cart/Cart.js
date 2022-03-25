@@ -1,16 +1,17 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
 
 const Cart = (props) => {
-  const { id, name, price, img } = props.cart;
+  const { name, img } = props.cart;
 
   return (
-    <div className="cart">
-      <h3 className="ps-3">Selected Vegetables</h3>
+    <div className="cart text-center">
       <div className="d-flex ps-3">
-        <img src={img} alt="" />
+        <img className="my-2" src={img} alt="" />
         <h5 className="px-3 pt-3">{name}</h5>
-        <p className="pt-3">delete</p>
+        <FontAwesomeIcon className="pt-4" icon={faTrash}></FontAwesomeIcon>
       </div>
     </div>
   );
