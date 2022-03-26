@@ -10,7 +10,7 @@ const Cart = (props) => {
     <div className="cart text-center">
       <div className="d-flex ps-3">
         <img className="my-2" src={img} alt="" />
-        <h5 className="px-3 pt-3">{name}</h5>
+        <h6 className="px-3 pt-4">{name}</h6>
         <FontAwesomeIcon className="pt-4" icon={faTrash}></FontAwesomeIcon>
       </div>
     </div>

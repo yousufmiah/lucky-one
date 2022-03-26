@@ -13,9 +13,12 @@
 }
 
 .cart-container{
-    background-color: rgba(16, 57, 241, 0.3);
+    background-color: rgba(45, 92, 18, 0.219);
+    height: 450px;
+    width: 400px;
     position:sticky;
-    top:100px;
+    top:88px;
+
         
 }
 
@@ -25,7 +28,7 @@
     }
 }
 @media screen and (max-width:875px) {
-    .vegetables-container{
+    .vegetables-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
