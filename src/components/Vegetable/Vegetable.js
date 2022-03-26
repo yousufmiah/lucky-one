@@ -5,6 +5,7 @@ import "./Vegetable.css";
 
 const Vegetable = (props) => {
   // console.log(props.vegetable);
+
   const { addToCartHandler, vegetable } = props;
 
   const { id, name, price, img } = vegetable;

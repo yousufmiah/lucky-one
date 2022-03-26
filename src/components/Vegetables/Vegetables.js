@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
+import Chosed from "../Chosed/Chosed";
 import Questions from "../Questions/Questions";
 import Selected from "../Selected/Selected";
 import SelectItem from "../SelectItem/SelectItem";
@@ -17,16 +18,24 @@ const Vegetables = () => {
   }, []);
 
   const addToCartHandler = (vegetable) => {
-    if (carts.length < 4) {
+    if (carts.length <= 3) {
       const newVegetable = [...carts, vegetable];
       setCarts(newVegetable);
     } else {
-      alert("Sorry, not allow above 4 items.");
+      alert("Sorry, No allow above 4 items.");
     }
   };
 
   const emptyItem = () => {
     setCarts([]);
+  };
+
+  const choseOne = () => {
+    if (carts.length > 0) {
+      const randomId = Math.floor(Math.random() * carts.length);
+      const lucky = carts[randomId];
+      setCarts([lucky]);
+    }
   };
 
   return (
@@ -42,9 +51,13 @@ const Vegetables = () => {
       </div>
       <div className="cart-container">
         <SelectItem></SelectItem>
-        {carts.map((cart) => (
-          <Cart cart={cart}></Cart>
-        ))}
+        <div>
+          {carts.map((cart) => (
+            <Cart cart={cart}></Cart>
+          ))}
+        </div>
+
+        <Chosed choseOne={choseOne}></Chosed>
         <Selected emptyItem={emptyItem}></Selected>
       </div>
       <div className="ps-5">
