@@ -8,7 +8,7 @@ const Vegetable = (props) => {
 
   const { addToCartHandler, vegetable } = props;
 
-  const { id, name, price, img } = vegetable;
+  const { name, price, img } = vegetable;
 
   return (
     <div className="vegetable-size text-center">

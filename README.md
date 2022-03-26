@@ -1,12 +1,12 @@
 ========= Wel-come to our website =========
 
-## Website
+## Live Website link
 
-[live website link is](https://vegetables-yousuf.netlify.app/)
+[Vegetables Shop](https://vegetables-yousuf.netlify.app/)
 
 ## github link
 
-[github link is](https://github.com/Programming-Hero-Web-Course4/lucky-one-yousufmiah.git)
+[github link](https://github.com/Programming-Hero-Web-Course4/lucky-one-yousufmiah.git)
 
 **Description of this website**
 

@@ -26,18 +26,23 @@ const Vegetables = () => {
     }
   };
 
-  //emptyItem button===================================
-  const emptyItem = () => {
-    setCarts([]);
-  };
-
   // chose 1 item button ===============================
   const choseOne = () => {
-    if (carts.length > 0) {
+    if (carts.length < 2 || carts.length == 0) {
+      alert("Please add Item !");
+    } else {
       const randomId = Math.floor(Math.random() * carts.length);
       const lucky = carts[randomId];
       setCarts([lucky]);
     }
+  };
+
+  //emptyItem button===================================
+  const emptyItem = () => {
+    if (carts == 0) {
+      alert("Please add item!");
+    }
+    setCarts([]);
   };
 
   return (
