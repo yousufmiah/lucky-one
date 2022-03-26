@@ -19,7 +19,7 @@ const Vegetable = (props) => {
       </h5>
       <button
         onClick={() => addToCartHandler(vegetable)}
-        className="btn bg-primary px-5"
+        className="btn bg-primary"
       >
         <strong className="text-white px-2">Add to Cart</strong>
         <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>

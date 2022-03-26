@@ -17,6 +17,7 @@ const Vegetables = () => {
       .then((data) => setVegetables(data));
   }, []);
 
+  //cart to add button====================
   const addToCartHandler = (vegetable) => {
     if (carts.length <= 3) {
       const newVegetable = [...carts, vegetable];
@@ -26,10 +27,12 @@ const Vegetables = () => {
     }
   };
 
+  //emptyItem button===================================
   const emptyItem = () => {
     setCarts([]);
   };
 
+  // chose 1 item button ===============================
   const choseOne = () => {
     if (carts.length > 0) {
       const randomId = Math.floor(Math.random() * carts.length);
@@ -49,6 +52,7 @@ const Vegetables = () => {
           ></Vegetable>
         ))}
       </div>
+
       <div className="cart-container">
         <SelectItem></SelectItem>
         <div>

@@ -1,13 +1,12 @@
 import "./App.css";
 import Vegetables from "./components/Vegetables/Vegetables";
 import "./App.css";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className=" main text-center text-white bg-primary py-3">
-        Vegetables Shop
-      </h1>
+    <div>
+      <Header></Header>
       <Vegetables></Vegetables>
     </div>
   );
