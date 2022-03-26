@@ -1,6 +1,6 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Vegetables from "./components/Vegetables/Vegetables";
-import "./App.css";
 import Header from "./components/Header/Header";
 
 function App() {

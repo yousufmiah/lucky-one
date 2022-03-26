@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Cart from "../Cart/Cart";
-import Chosed from "../Chosed/Chosed";
 import Questions from "../Questions/Questions";
 import Selected from "../Selected/Selected";
 import SelectItem from "../SelectItem/SelectItem";
@@ -60,9 +59,7 @@ const Vegetables = () => {
             <Cart cart={cart}></Cart>
           ))}
         </div>
-
-        <Chosed choseOne={choseOne}></Chosed>
-        <Selected emptyItem={emptyItem}></Selected>
+        <Selected choseOne={choseOne} emptyItem={emptyItem}></Selected>
       </div>
       <div className="ps-5">
         <Questions></Questions>
