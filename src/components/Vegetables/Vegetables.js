@@ -18,6 +18,20 @@ const Vegetables = () => {
 
   //cart to add button====================
   const addToCartHandler = (vegetable) => {
+    for (const cart of carts) {
+      if (cart.id === vegetable.id) {
+        alert("Already added item. Please try another");
+        return;
+      }
+    }
+
+    // find
+    /*  const item = carts.find((cart) => cart.id === vegetable.id);
+       if (item) {
+      alert("Please add another item. find");
+      return;
+    } */
+
     if (carts.length <= 3) {
       const newVegetable = [...carts, vegetable];
       setCarts(newVegetable);
@@ -26,7 +40,7 @@ const Vegetables = () => {
     }
   };
 
-  // chose 1 item button ===============================
+  // chose 1 item button by random===============================
   const choseOne = () => {
     if (carts.length < 2 || carts.length == 0) {
       alert("Please add Item !");
@@ -45,6 +59,12 @@ const Vegetables = () => {
     setCarts([]);
   };
 
+  //delete single item from cart
+  const removeItemFromCart = (id) => {
+    const removeItem = carts.filter((cart) => cart.id !== id);
+    setCarts(removeItem);
+  };
+
   return (
     <div className="store-container">
       <div className="vegetables-container">
@@ -61,7 +81,7 @@ const Vegetables = () => {
         <SelectItem></SelectItem>
         <div>
           {carts.map((cart) => (
-            <Cart cart={cart}></Cart>
+            <Cart cart={cart} removeItemFromCart={removeItemFromCart}></Cart>
           ))}
         </div>
         <Selected choseOne={choseOne} emptyItem={emptyItem}></Selected>

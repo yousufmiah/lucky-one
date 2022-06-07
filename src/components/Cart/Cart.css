@@ -1,4 +1,18 @@
 .cart img{
     width:50px;
-    height:50px;  
+    height:50px;
+    border: 2px solid green;
+    border-radius:50px;
 }
+
+.icon{
+    cursor:pointer;
+}
+/* .size{
+   background-color: rgb(158, 184, 163);
+   display: flex;
+   margin: 5px;
+   border-radius: 5px;
+   padding: 10px;
+ width: 180px;
+} */

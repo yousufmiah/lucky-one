@@ -24,8 +24,15 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
+
 @media screen and (max-width:875px) {
-    .vegetables-container{
-        grid-template-columns: repeat(1, 1fr);
+    .store-container{
+        grid-template-columns: 1fr;
+       
+        
     }
+    .vegetables-container{
+        grid-template-columns: 1fr;
+    }
+
 } 

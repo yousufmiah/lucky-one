@@ -4,14 +4,22 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import "./Cart.css";
 
 const Cart = (props) => {
-  const { name, img } = props.cart;
+  const { removeItemFromCart } = props;
+  const { id, name, img } = props.cart;
 
   return (
-    <div className="cart text-center">
+    <div className="cart text-center ">
       <div className="d-flex ps-3">
-        <img className="my-2" src={img} alt="" />
-        <h6 className="px-3 pt-4">{name}</h6>
-        <FontAwesomeIcon className="pt-4" icon={faTrash}></FontAwesomeIcon>
+        <div className="size d-flex">
+          <img className="my-2" src={img} alt="" />
+          <h6 className="px-2 pt-4">{name}</h6>
+
+          <FontAwesomeIcon
+            onClick={() => removeItemFromCart(id)}
+            className="pt-4 icon"
+            icon={faTrash}
+          ></FontAwesomeIcon>
+        </div>
       </div>
     </div>
   );
